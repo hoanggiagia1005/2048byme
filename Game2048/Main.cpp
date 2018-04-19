@@ -103,10 +103,10 @@ int main(int argc, char *argv[])
 	newGameBtn->setXY(100, 35);
 
 	g.curScoreBoard()->setXY(
-		300,
+		400,
 		20);
 	g.bestScoreBoard()->setXY(
-		400,
+		500,
 		20);
 
 
