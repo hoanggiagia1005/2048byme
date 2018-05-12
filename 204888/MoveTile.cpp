@@ -25,7 +25,7 @@ void move(Direction d) {
 					for (int k = i; k<N - 1; k++)
 						MAP[k][j] = MAP[k + 1][j];
 					MAP[N - 1][j] = 0;
-					MAP[i][j] = MAP[i][j]* MAP[i][j];
+					MAP[i][j] *=2 ;
 				}
 			}
 		}
@@ -53,7 +53,7 @@ void move(Direction d) {
 					for (int k = j; k<M - 1; k++)
 						MAP[i][k] = MAP[i][k + 1];
 					MAP[i][M - 1] = 0;
-					MAP[i][j] = MAP[i][j] * MAP[i][j];
+					MAP[i][j] *= 2;
 				}
 			}
 		}
@@ -81,7 +81,7 @@ void move(Direction d) {
 					for (int k = i; k >= 0; k--)
 						MAP[k][j] = MAP[k - 1][j];
 					MAP[0][j] = 0;
-					MAP[i][j] = MAP[i][j] * MAP[i][j];
+					MAP[i][j] *= 2;
 				}
 			}
 		}
@@ -109,7 +109,7 @@ void move(Direction d) {
 					for (int k = j; k>0; k--)
 						MAP[i][k] = MAP[i][k - 1];
 					MAP[i][0] = 0;
-					MAP[i][j] = MAP[i][j] * MAP[i][j];
+					MAP[i][j] *= 2;
 				}
 			}
 		}

@@ -111,13 +111,13 @@ int main()
 					sprite_4.setPosition(j*TILESIZE, i*TILESIZE);
 					window.draw(sprite_4);
 				}
-				else if (MAP[i][j] == 16) {
-					sprite_nothing.setPosition(j*TILESIZE, i*TILESIZE);
-					window.draw(sprite_nothing);
+				else if (MAP[i][j] == 8) {
+					sprite_8.setPosition(j*TILESIZE, i*TILESIZE);
+					window.draw(sprite_8);
 				}
-				else if (MAP[i][j] == 256){
-					sprite_nothing.setPosition(j*TILESIZE, i*TILESIZE);
-					window.draw(sprite_nothing);
+				else if (MAP[i][j] == 16){
+					sprite_16.setPosition(j*TILESIZE, i*TILESIZE);
+					window.draw(sprite_16);
 				}
 				else if (MAP[i][j] == 32){
 					sprite_32.setPosition(j*TILESIZE, i*TILESIZE);
